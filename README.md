@@ -23,3 +23,42 @@ Los modelos de regresión son herramientas estadísticas utilizadas para modelar
 
 Es importante tener en cuenta que el dataset seleccionado podría afectar de cierta forma el buen entrenamiento de los modelos. Esto, debido a que hay un desbalance de los datos, lo que podría resultar en que los modelos se entrenen de mejor forma con ciertas variables por sobre otras. Este desbalance se podrá visualizar gráficamente durante el análsis exploratorio de datos (EDA).
 
+**RESPUESTAS**
+
+**FEACTURES**
+
+LAS CARACTERISTICAS QUE DETERMINAMOS DENTRO DE NUESTRO DATAFRAME SON: 
+
+PRICE         - NUMERICA   - NO CODIFICADA - VARIBLE OBJETIVO
+YEAR          - NUMERICA   - NO CODIFICADA
+BRAND         - CATEGÓRICA - CODIFICADA
+MODEL         - CATEGÓRICA - CODIFICADA
+MILEAGE       - NUMERICA   - NO CODIFICADA
+TITLE_STATUS  - CATEGÓRICA - CODIFICADA
+COLOR         - CATEGÓRICA - CODIFICADA
+VIN           - CATEGÓRICA - ELIMINADA
+LOT           - CATEGÓRICA - ELIMINADA
+STATE         - CATEGÓRICA - CODIFICADA
+COUNTRY       - CATEGÓRICA - ELIMINADA
+CONDITION     - CATEGÓRICA - CODIFICADA
+
+NUESTRAS VARIABLES LAS DEFINICIMOS DE LA SIGUIENTE FORMA:
+
+PRICE         = El precio es el valor de venta, por el cual se realizara la venta del vehiculo (ES LO QUE BUSCAMOS PRECEDIR).
+YEAR          = Es el año en el cual se fabrico el vehiculo.
+BRAND         = Es la marca del vehiculo.
+MODEL         = Son los modelos de auto de las diferentes marcas.
+MILEAGE       = Es el kilometraje del vehiculo, es decir la distancia manejada de este.
+TITLE_STATUS  = Es la condiciòn fisica del vehiculo.
+COLOR         = Es el color de vehiculo.
+VIN           = Es el codigo de identificación del vehiculo, el cual debe contar con 17 caracteres.
+LOT           = Es el numero de identificación del lote, para realizar un seguimiento.
+STATE         = Es el estado en el cual se encuentra el auto en Estados Unidos.
+COUNTRY       = Es el pais donde se esta realizando la venta del auto.
+CONDITION     = Es el tiempo de publicación restante, para realizar la venta.
+
+Decidimos eliminar algunas variables categorias, debido a que estas pueden afectar el desempeño del modelo de Regresión lineal, debido a que este se puede volver demasiado completo para concluir, evitando la posibilidad de interpretarlo, esto es debido a que el modelo con muchas variables categorias, es propenso a sufrir overfitting.
+
+# ¿EL MODELO PRESENTA UN DESBALANCE?
+
+Al incio, habíamos determinado que el DataFrame presentaba un desbalance debido a las distribuciones que observamos en el Kaggle. Esto fue comprobado al visualizar gráficamente la distribución por medio de un histograma, donde nuevamente se evidenció que la mayoría de los vehículos son de la marca Ford. Por esto, determinamos una alta concentración o asimetría en los datos del dataframe.
