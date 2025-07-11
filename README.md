@@ -29,33 +29,33 @@ Es importante tener en cuenta que el dataset seleccionado podría afectar de cie
 
 LAS CARACTERISTICAS QUE DETERMINAMOS DENTRO DE NUESTRO DATAFRAME SON: 
 
-PRICE         - NUMERICA   - NO CODIFICADA - VARIBLE OBJETIVO
-YEAR          - NUMERICA   - NO CODIFICADA
-BRAND         - CATEGÓRICA - CODIFICADA
-MODEL         - CATEGÓRICA - CODIFICADA
-MILEAGE       - NUMERICA   - NO CODIFICADA
-TITLE_STATUS  - CATEGÓRICA - CODIFICADA
-COLOR         - CATEGÓRICA - CODIFICADA
-VIN           - CATEGÓRICA - ELIMINADA
-LOT           - CATEGÓRICA - ELIMINADA
-STATE         - CATEGÓRICA - CODIFICADA
-COUNTRY       - CATEGÓRICA - ELIMINADA
-CONDITION     - CATEGÓRICA - CODIFICADA
+1. PRICE         - NUMERICA   - NO CODIFICADA - VARIBLE OBJETIVO
+2. YEAR          - NUMERICA   - NO CODIFICADA
+3. BRAND         - CATEGÓRICA - CODIFICADA
+4. MODEL         - CATEGÓRICA - CODIFICADA
+5. MILEAGE       - NUMERICA   - NO CODIFICADA
+6. TITLE_STATUS  - CATEGÓRICA - CODIFICADA
+7. COLOR         - CATEGÓRICA - CODIFICADA
+8. VIN           - CATEGÓRICA - ELIMINADA
+9. LOT           - CATEGÓRICA - ELIMINADA
+10. STATE         - CATEGÓRICA - CODIFICADA
+11. COUNTRY       - CATEGÓRICA - ELIMINADA
+12. CONDITION     - CATEGÓRICA - CODIFICADA
 
 NUESTRAS VARIABLES LAS DEFINICIMOS DE LA SIGUIENTE FORMA:
 
-PRICE         = El precio es el valor de venta, por el cual se realizara la venta del vehiculo (ES LO QUE BUSCAMOS PRECEDIR).
-YEAR          = Es el año en el cual se fabrico el vehiculo.
-BRAND         = Es la marca del vehiculo.
-MODEL         = Son los modelos de auto de las diferentes marcas.
-MILEAGE       = Es el kilometraje del vehiculo, es decir la distancia manejada de este.
-TITLE_STATUS  = Es la condiciòn fisica del vehiculo.
-COLOR         = Es el color de vehiculo.
-VIN           = Es el codigo de identificación del vehiculo, el cual debe contar con 17 caracteres.
-LOT           = Es el numero de identificación del lote, para realizar un seguimiento.
-STATE         = Es el estado en el cual se encuentra el auto en Estados Unidos.
-COUNTRY       = Es el pais donde se esta realizando la venta del auto.
-CONDITION     = Es el tiempo de publicación restante, para realizar la venta.
+1. PRICE         = El precio es el valor de venta, por el cual se realizara la venta del vehiculo (ES LO QUE BUSCAMOS PRECEDIR).
+2. YEAR          = Es el año en el cual se fabrico el vehiculo.
+3. BRAND         = Es la marca del vehiculo.
+4. MODEL         = Son los modelos de auto de las diferentes marcas.
+5. MILEAGE       = Es el kilometraje del vehiculo, es decir la distancia manejada de este.
+6. TITLE_STATUS  = Es la condiciòn fisica del vehiculo.
+7. COLOR         = Es el color de vehiculo.
+8. VIN           = Es el codigo de identificación del vehiculo, el cual debe contar con 17 caracteres.
+9. LOT           = Es el numero de identificación del lote, para realizar un seguimiento.
+10. STATE         = Es el estado en el cual se encuentra el auto en Estados Unidos.
+11. COUNTRY       = Es el pais donde se esta realizando la venta del auto.
+12. CONDITION     = Es el tiempo de publicación restante, para realizar la venta.
 
 Decidimos eliminar algunas variables categorias, debido a que estas pueden afectar el desempeño del modelo de Regresión lineal, debido a que este se puede volver demasiado completo para concluir, evitando la posibilidad de interpretarlo, esto es debido a que el modelo con muchas variables categorias, es propenso a sufrir overfitting.
 
