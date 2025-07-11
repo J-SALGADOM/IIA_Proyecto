@@ -23,4 +23,3 @@ Los modelos de regresión son herramientas estadísticas utilizadas para modelar
 
 Es importante tener en cuenta que el dataset seleccionado podría afectar de cierta forma el buen entrenamiento de los modelos. Esto, debido a que hay un desbalance de los datos, lo que podría resultar en que los modelos se entrenen de mejor forma con ciertas variables por sobre otras. Este desbalance se podrá visualizar gráficamente durante el análsis exploratorio de datos (EDA).
 
-Kevin es troll o
