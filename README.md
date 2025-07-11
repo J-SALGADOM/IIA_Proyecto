@@ -22,3 +22,5 @@ Para la realización de este proyecto, se utilizará el dataset 'USA_cars_datase
 Los modelos de regresión son herramientas estadísticas utilizadas para modelar relaciones entre variables numéricas, por lo que su uso en nuestro proyecto es adecuado para abordar problemas de predicción de precios gracias a su fácil implementación, simple interpretabilidad y bajo requerimiento computacional.
 
 Es importante tener en cuenta que el dataset seleccionado podría afectar de cierta forma el buen entrenamiento de los modelos. Esto, debido a que hay un desbalance de los datos, lo que podría resultar en que los modelos se entrenen de mejor forma con ciertas variables por sobre otras. Este desbalance se podrá visualizar gráficamente durante el análsis exploratorio de datos (EDA).
+
+hola
