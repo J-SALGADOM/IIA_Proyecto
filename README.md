@@ -1,6 +1,8 @@
 # COM4402 Introducción a la Inteligencia Artificial - Proyecto Final
 Integrantes: Kevin Fuentes N. y José Salgado M.
+
 Docente: Gabriel Cabas M.
+
 Ayudante: Nairo Torres F.
 
 ## **DEFINICIÓN DEL PROBLEMA**
