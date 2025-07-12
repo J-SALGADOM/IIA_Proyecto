@@ -54,3 +54,37 @@ Decidimos eliminar algunas variables categóricas debido a que estas pueden afec
 ## ¿EL MODELO PRESENTA UN DESBALANCE?
 
 Al incio, habíamos determinado que el DataFrame presentaba un desbalance debido a las distribuciones que observamos en el Kaggle. Esto fue comprobado al visualizar gráficamente la distribución por medio de un histograma, donde nuevamente se evidenció que la mayoría de los vehículos son de la marca Ford. Por esto, determinamos una alta asimetría o sesgo en los datos del DataFrame.
+
+# CONCLUSIÓN
+
+A traves de las metricas de evaluación realizadas a los modelos, pudimos determinar lo siguiente:
+
+1. REGRESIÓN LINEAL: Pudimos determinar que este modelo presenta el peor rendimiento. Esto fue identificado gracias a la aplicación de 3 métricas de evaluación, las cuales nos entregaron los siguiente resultados:
+
+R²-SCORE: 0.293429 – Los resultados indican que el modelo tiene una capacidad bastante limitada para explicar la variabilidad de los precios reales de los autos vendidos.
+
+MSE: 1.119866e+08 y MAE: 7850.03758 – El modelo presentó los valores más altos en estos indicadores, lo que demuestra que las predicciones realizadas se alejan bastante del valor real del vehículo.
+
+Gracias a estas métricas, determinamos que el modelo no es capaz de predecir correctamente el valor de los vehículos, lo que indica que no logra capturar adecuadamente las relaciones presentes de nuestro DataFrame seleccionado.
+
+2. RANDOM FOREST REGRESSOR: Pudimos determinar que este modelo presenta el mejor rendimiento, debido a los siguientes resultados obtenidos por las metricas de evaluación aplicadas:
+
+    - R²-SCORE: 0.684923 - El resultado nos indica que el modelo presenta una alta capacidad para poder explicar la variabilidad de los precios de los véhiculos.
+
+    - MSE: 4.993753e+07 y MAE: 4552.42402 - Por otro lado este modelo presento el mejor MSE Y MAE, lo que nos permite determinar que las predicciones realizas por este modelo, se acercan mucho al valor real del véhiculo.
+
+Gracias a esto, pudimos concluir que el modelo es efectivo para capturar las relaciones complejas y no lineales del Dataframe, esto es debido a que se aplican muchos arboles de decisión, los que son entrenando con diferentes grupos de datos para luego ser promediados, dandonos una predicción robusta y mas exacta que el resto de los modelos.
+
+3. K-MEAREST NEIGHBORS REGRESSOR: Pudimos determinar que este modelo presenta el segundo mejor rendimiento, debido a los siguientes resultados obtenidos por las metricas de evaluación:  
+
+    - R²-SCORE: 0.580108 - El resultado nos indica que el modelo presenta una capacidad intermedia para explicar la variabilidad de los precios reales de los véhiculos.
+
+    - MSE: 6.655000e+07	 y MAE: 5508.69040 - Por otro lado este modelo presento un buen MSE Y MAE, sin embargo este modelo no presenta la presición optima para determinar el valor real del véhiculo.
+
+Podemos destacar que realiza predicciones parecidas al precio, no realiza el mismo proceder que el resto, dado que solo almacena los datos, en vez de entrenarlos
+
+# CONCLUSIÓN GENERAL
+
+Tras haber implementado, entrenado y evaluado los tres modelos de regresión sobre de dataset, los resultados obtenidos mediante las métricas y gráficos nos permiten establcer una conclusión determinante respecto al desempeño y adecuación de cada uno para la predicción del precio de los vehículos. Random Forest Regressor es evidentemente el modelo que mejor se desempeña para nuestro conjunto de datos. Supera en todas las métricas a los demás modelos implementados, lo que sugiere que es el más adecuado para predecir el valor de un vehículo de nuestro DataFrame. Si bien se puede notar un tiempo de ejecución ligeramente mayor de este modelo por sobre los demás, su capacidad de manejar relaciones no lineales y su robustez frente al overfitting le da una clara ventaja de desempeño escalable a otros conjuntos de datos similares.
+
+El modelo Random Forest Regressor mostró el mejor rendimiento global, logrando capturar el mayor porcentaje de varianza presente en los datos reales del dataset, evidenciando una mayor capacidad de identificar patrones en los datos, a su vez que también registró una mejor precisión. Este mejor rendimiento se debe principalmente a la naturaleza del modelo, que combina árboles de decisión para reducir el sobreajuste y optimizar la generalización, manejando de manera destacable las interacciones entre las variables y el ruido en los datos, convirtiéndose en una excelente elección para tareas de regresión con una complejidad similar a la de este proyecto.
