@@ -1,4 +1,5 @@
 # COM4402 Introducción a la Inteligencia Artificial - Proyecto Final
+
 Integrantes: Kevin Fuentes N. y José Salgado M.
 
 Docente: Gabriel Cabas M.
@@ -25,7 +26,7 @@ Para la realización de este proyecto, se utilizará el dataset 'USA_cars_datase
 
 Los modelos de regresión son herramientas estadísticas utilizadas para modelar relaciones entre variables numéricas, por lo que su uso en nuestro proyecto es adecuado para abordar problemas de predicción de precios gracias a su fácil implementación, simple interpretabilidad y bajo requerimiento computacional.
 
-Es importante tener en cuenta que el dataset seleccionado podría afectar de cierta forma el buen entrenamiento de los modelos. Esto, debido a que hay un desbalance de los datos, lo que podría resultar en que los modelos se entrenen de mejor forma con ciertas variables por sobre otras. Este desbalance se podrá visualizar gráficamente durante el análsis exploratorio de datos (EDA).
+Es importante tener en cuenta que el dataset seleccionado podría afectar de cierta forma el buen entrenamiento de los modelos. Esto, debido a que hay un sesgo de los datos, lo que podría resultar en que los modelos se entrenen de mejor forma con ciertas variables por sobre otras. Este sesgo se podrá visualizar gráficamente durante el análsis exploratorio de datos (EDA).
 
 
 # **CORRECCIONES POST RETROALIMENTACIÓN**
@@ -33,6 +34,7 @@ Es importante tener en cuenta que el dataset seleccionado podría afectar de cie
 ## **FEATURES**
 
 Los atributos que contienen nuestro DataFrame son:
+
 1. UNNAMED: 0   - NUMÉRICA   - ELIMINADA     - Índice del DataFrame, no aporta significancia para el entrenamiento de modelos.
 2. PRICE        - NUMÉRICA   - NO CODIFICADA - Precio de venta del vehículo. Corresponde al target de nuestro proyecto.
 3. YEAR         - NUMÉRICA   - NO CODIFICADA - Es el año en el cual se fabricó el vehículo.
